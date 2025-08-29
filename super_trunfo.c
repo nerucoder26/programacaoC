@@ -22,19 +22,19 @@ int main() {
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     
     printf("Digite uma letra de A~H: ");
-    scanf("%c", &estado);
+    scanf(" %c", &estado);
 
     printf("Digite uma letra da carta seguida de um número de 01 a 04: ");
-    scanf("%s", &codigo);
+    scanf("%s", codigo);
 
     printf("Digite o nome da cidade: ");
-    scanf("%s", &nome);
+    scanf("%s", nome);
 
     printf("Quantas pessoas tem na cidade?: ");
     scanf("%d", &populacao);
 
     printf("Quantos kilometros quadrados tem a cidade?: ");
-    scanf("%f", &area),
+    scanf("%f", &area);
 
     printf("Qual o pib da cidade?: ");
     scanf("%f", &pib);
@@ -48,10 +48,10 @@ int main() {
     scanf(" %c", &estado2);
     
     printf("Digite uma letra da carta seguida de um número de 01 a 04: ");
-    scanf("%s", &codigo2);
+    scanf("%s", codigo2);
 
     printf("Digite o nome da cidade: ");
-    scanf("%s", &nome2);
+    scanf("%s", nome2);
 
     printf("Quantas pessoas tem na cidade?: ");
     scanf("%d", &populacao2);
@@ -74,7 +74,7 @@ int main() {
     printf("Estado: %c \n", estado);
     printf("Código: %s \n", codigo);
     printf("Nome da cidade : %s \n", nome);
-    printf("População: %.2d \n", populacao);
+    printf("População: %.d \n", populacao);
     printf("Área: %.2f Km² \n", area);
     printf("PIB : %.2f Bilhões de reais \n", pib);
     printf("Número de pontos turisticos: %d \n",ponto_turistico);
@@ -84,7 +84,7 @@ int main() {
     printf("Estado: %c \n", estado2);
     printf("Código: %s \n", codigo2);
     printf("Nome da cidade : %s \n", nome2);
-    printf("População: %.2d \n", populacao2);
+    printf("População: %.d \n", populacao2);
     printf("Área: %.2f Km² \n", area2);
     printf("PIB : %.2f Bilhões de reais \n", pib2);
     printf("Número de pontos turisticos: %d \n",ponto_turistico2);
