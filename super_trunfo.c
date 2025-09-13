@@ -4,7 +4,6 @@
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
@@ -12,12 +11,16 @@ int main() {
     char estado, estado2;
     char codigo[50], codigo2[50];
     char nome[50], nome2[50];
-    int populacao, populacao2;
+    long int populacao, populacao2;
     float area, area2;
     float pib, pib2;
     int ponto_turistico, ponto_turistico2;
     float densidade, densidade2;
     float pibper, pibper2;
+    float superpoder, superpoder2;
+
+        superpoder = area + pib + ponto_turistico + populacao + pibper;
+        superpoder2 = area2 + pib2 + ponto_turistico2 + populacao2 + pibper2;
 
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -97,8 +100,49 @@ int main() {
 
     densidade2 = populacao2 / area2;
     pibper2 = pib2 / populacao2;
+
     printf("Densidade populacional: %.2f hab/km²\n", densidade2);
     printf("PIB per capita: %.2f reais \n", pibper2);
+
+
+    //Comparação das cartas inseridas.
+    
+    printf("--- Comparação de cartas ---\n");
+    if (populacao > populacao2)
+        printf("População : Carta 1 venceu\n");
+    else
+        printf("População : Carta 2 venceu\n");
+
+    if (area > area2)
+        printf("Area : Carta 1 venceu \n");
+    else
+        printf("Area : Carta 2 venceu \n");
+    
+    if (pib > pib2)
+        printf("PIB : Carta 1 venceu \n");
+    else
+        printf("PIB : Carta 2 venceu \n");
+
+    if (ponto_turistico > ponto_turistico2)
+        printf("Pontos turisticos : Carta 1 venceu \n");
+    else
+        printf("Pontos turisticos : Carta 2 venceu \n");
+    
+    if (densidade < densidade2)
+        printf("Densidade Populacional : Carta 1 venceu \n");
+    else
+        printf("Densidade Populacional : Carta 2 venceu \n");
+    
+    if (pibper > pibper2)
+        printf("PIB per capita : Carta 1 venceu\n");
+    else
+        printf("PIB per capita : Carta 2 venceu\n");
+
+    if (superpoder > superpoder2)
+        printf("Super Poder : Carta 1 venceu\n");
+    else
+        printf("Super Poder : Carta 2 venceu\n");
+
 
     return 0;
 }
