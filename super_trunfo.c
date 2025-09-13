@@ -139,9 +139,9 @@ int main() {
         printf("PIB per capita : Carta 2 venceu\n");
 
     if (superpoder > superpoder2)
-        printf("Super Poder : Carta 1 venceu\n");
+        printf("Super Poder : Carta 1 venceu : %.2f\n",superpoder);
     else
-        printf("Super Poder : Carta 2 venceu\n");
+        printf("Super Poder : Carta 2 venceu : %.2f\n",superpoder2);
 
 
     return 0;
